@@ -8,8 +8,24 @@ html, body {
     height: 100%;
     width: 100%;
 }
-#box {
+.box {
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child1 {
+    height: 300px;
+    width: 300px;
+    background-color: royalblue;
+    border: 5px solid #000;
+}
+.child2 {
     height: 300px;
     width: 300px;
     background-color: crimson;
+    border: 5px solid #000;
 }
