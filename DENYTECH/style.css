@@ -1,0 +1,66 @@
+@font-face {
+  font-family: myFont;
+  src: url(./font/Gilroy-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFont;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  padding: 0px 40px;
+}
+#nav {
+  height: 100px;
+  width: 100%;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#nav-part1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav h3 {
+  font-size: 17px;
+  border: 1.5px solid #000;
+  font-weight: 500;
+  padding: 5px 8px;
+  border-radius: 50px;
+}
+#nav i {
+  font-size: 16px;
+  border: 1.5px solid #000;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+#nav h1 {
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+#nav button {
+  padding: 7px 12px;
+  border-radius: 50px;
+  border: 1.5px solid #000;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+}
+#nav button#btn2 {
+    border: none;
+  color: white;
+  background-color: orangered;
+}
