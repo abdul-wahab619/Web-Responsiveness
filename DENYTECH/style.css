@@ -60,7 +60,37 @@ body {
   background-color: white;
 }
 #nav button#btn2 {
-    border: none;
+  border: none;
   color: white;
   background-color: orangered;
+}
+#main > h1 {
+  font-size: 125px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+img {
+  height: 300px;
+  width: 220px;
+  object-fit: cover;
+  object-position: top;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+#img1{
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+#img2{
+    transform: translate(-50%, -50%) rotate(-20deg);
+}
+#img3{
+    transform: translate(-50%, -50%) rotate(-10deg);
 }
