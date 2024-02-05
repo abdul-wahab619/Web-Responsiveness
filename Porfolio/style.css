@@ -1,0 +1,139 @@
+@font-face {
+  font-family: myFont;
+  src: url(./font/Gilroy-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFont;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* background-color: aquamarine; */
+  padding: 40px 50px;
+}
+#nav-part1 {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+#nav-part2 {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+#nav h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#nav h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#nav h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#content {
+  margin-top: 60px;
+  padding: 40px 65px;
+}
+#content h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+#content h1 {
+  margin-top: 30px;
+  font-size: 120px;
+  line-height: 130px;
+  font-weight: 500;
+  letter-spacing: -5px;
+  word-spacing: 10px;
+}
+#case {
+  padding: 40px 65px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#case h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+#case h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+#right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#line {
+  height: 2px;
+  width: 150px;
+  background-color: #000;
+}
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+  gap: 60px;
+}
+.elem {
+  width: 50%;
+}
+.elem-img {
+  height: 700px;
+  background-color: rgb(173, 209, 220);
+  width: 100%;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+}
+#img1 {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Sketch_Logo.svg/1200px-Sketch_Logo.svg.png);
+}
+#img2 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmzo-7VL6s0U1JA2Ie9mKwyNuiCLqKPiRlyHmQZ8tRcj35W2B1);
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.bottom i {
+  padding: 15px 30px;
+  font-size: 20px;
+  border: 2px solid #000;
+  border-radius: 50px;
+}
+i:hover {
+  background-color: #000;
+  color: white;
+}
+.bottom h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.bottom h4 {
+  font-size: 20px;
+  color: #808080;
+  font-weight: 500;
+}
