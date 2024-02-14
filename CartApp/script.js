@@ -30,6 +30,7 @@ var products = [
       "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGNoYWlyfGVufDB8fDB8fHww",
   },
 ];
+
 var popular = [
   {
     name: "Red Chair",
@@ -60,9 +61,12 @@ var popular = [
       "https://images.unsplash.com/photo-1585845786337-2b2b17c55fb0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdyZWVuJTIwY2hhaXJ8ZW58MHx8MHx8fDA%3D",
   },
 ];
+
+var cart = [];
+
 function addProduct() {
   var clutter = "";
-  products.forEach(function (product) {
+  products.forEach(function (product, index) {
     clutter += `  <div class="product w-fit rounded-xl p-2 bg-white">
       <div class="image w-[14rem] h-[13rem] bg-zinc-200 rounded-xl overflow-hidden">
         <img class="w-full h-full object-cover" src="${product.image}" alt="image"/>
@@ -76,8 +80,8 @@ function addProduct() {
             <h3 class="font-semibold opacity-20">${product.headline}</h3>
             <h4 class="font-semibold mt-2">${product.price} $</h4>
           </div>
-          <button class="w-10 h-10 rounded-full shader text-yellow-400">
-            <i class="ri-add-line"></i>
+          <button class=" add w-10 h-10 rounded-full shader text-yellow-400 data-index="${index}" ">
+            <i class="add ri-add-line data-index="${index}""></i>
           </button>
         </div>
       </div>
@@ -89,7 +93,7 @@ function addPopularProducts() {
   var clutter = "";
   popular.forEach(function (product) {
     clutter += `   <div
-    class="popular bg-white p-2 rounded-2xl flex items-start gap-3 w-[60%] flex-shrink-0"
+    class="popular bg-white p-2 rounded-2xl flex items-start gap-3 w-[40%] h-[40%] flex-shrink-0"
   >
     <div
       class="w-20 h-20 flex-shrink-0 rounded-2xl border-4 border-white overflow-hidden"
@@ -102,15 +106,32 @@ function addPopularProducts() {
     </div>
     <div class="data py-2 w-full">
       <h1 class="leading-none font-semibold">${product.name}</h1>
-      <h4 class="leading-none mt-2 text-sm font-semibold opacity-20">
+      <h4 class="leading-none mt-2 text-zinc-400 text-sm font-semibold opacity-20">
         ${product.headline}
       </h4>
-      <h4 class="mt-3 font-semibold text-zinc-500">${product.price}</h4>
+      <h4 class="mt-3 font-semibold text-zinc-500">&#8377; ${product.price}</h4>
     </div>
   </div>`;
   });
   document.querySelector(".populars").innerHTML = clutter;
 }
+function addToCart() {
+  document
+    .querySelector(".products")
+    .addEventListener("click", function (details) {
+      if (details.target.classList.contains("add")) {
+        cart.push(products[details.target.dataset.index]);
+        console.log(cart);
+      }
+    });
+}
+function showCart() {
+  document.querySelector(".carticon").addEventListener("click", function () {
+    document.querySelector(".cartexpnd").style.display = "block";
+  });
+}
+showCart();
+addToCart();
 addPopularProducts();
 addProduct();
 // show real popular products
