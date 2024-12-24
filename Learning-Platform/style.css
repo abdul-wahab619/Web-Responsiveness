@@ -327,7 +327,7 @@ section p {
   margin: 40px 0;
   position: relative;
 }
-.courses-section .course-card::after{
+.courses-section .course-card::after {
   content: "";
   height: 8px;
   position: absolute;
@@ -352,7 +352,7 @@ section p {
   align-items: center;
 }
 
-.courses-section .course-cards  .duration {
+.courses-section .course-cards .duration {
   font-family: "Raleway", sans-serif;
   font-weight: 900;
   font-size: 16px;
@@ -363,17 +363,48 @@ section p {
   padding-left: 20px;
 }
 
-.courses-section .course-card .duration::before{
+.courses-section .course-card .duration::before {
   content: url("images/clock-icon.svg");
   position: absolute;
   top: 2px;
   left: -6px;
 }
 
-.courses-section .wrapper{
+.courses-section .wrapper {
   position: relative;
 }
-.courses-section .wrapper .btn{
+.courses-section .wrapper .btn {
   position: absolute;
   right: 0;
+}
+
+/* App Section */
+
+.app-section {
+  text-align: center;
+}
+
+.app-section .app-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 24px;
+}
+
+.app-section .app-btn {
+  padding: 16px 30px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 310px;
+}
+
+.app-section .app-btn span {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #fff;
 }
