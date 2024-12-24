@@ -1,0 +1,129 @@
+:root {
+  --dark: #023047;
+  --light: #f1faee;
+  --dark-bg: #01141d;
+  --light-bg: #ffffff;
+  --logo: #fd5e5e;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--light-bg);
+  height: 100vh;
+}
+body.dark-mode {
+  --light: #023047;
+  --dark: #f1faee;
+  --light-bg: #01141d;
+  --dark-bg: #ffffff;
+}
+.container {
+  width: 1166px;
+  margin: 0 auto;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 34px;
+  position: fixed;
+  width: 1166px;
+}
+.nav-container .logo {
+  color: var(--logo);
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-container .right {
+  display: flex;
+  align-items: center;
+}
+.nav-container .menu-items a {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  text-decoration: none;
+  margin-right: 70px;
+  display: inline-block;
+  transition: all 500ms;
+}
+.nav-container .menu-items a:hover {
+  transform: translateY(-2px);
+}
+
+.nav-container .menu-items a.btn {
+  padding: 8px 32px;
+}
+/* Buttons */
+a.btn {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.22);
+  border-radius: 8px;
+  padding: 12px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  display: inline-block;
+}
+a.btn.dark {
+  background: var(--dark);
+  color: var(--light);
+}
+a.btn.light {
+  background: var(--light);
+  color: var(--dark);
+  border: 1px solid var(--dark);
+}
+.nav-container .dark-switch,
+.nav-container .light-switch {
+  position: absolute;
+  right: 0;
+  transform: translateY(-16px);
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  transition: all 500ms;
+}
+.nav-container .dark-switch.active,
+.nav-container .light-switch.active {
+  opacity: 1;
+  cursor: pointer;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.hero-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.hero-section h1 {
+  margin-top: 80px;
+  font-size: 60px;
+  color: var(--dark);
+  line-height: 100%;
+  width: 587px;
+  margin-bottom: 16px;
+}
+.hero-section p.sub-heading {
+  font-size: 20px;
+  line-height: 170%;
+  color: var(--dark);
+  width: 587px;
+}
+.hero-section a.btn {
+  margin-top: 20px;
+  margin-right: 42px;
+}
+
+.hero-section .right {
+  align-self: flex-end;
+}
+.hero-section .right img {
+  vertical-align: middle;
+  height: 500px;
+}
