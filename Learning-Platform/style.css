@@ -238,13 +238,12 @@ section p {
   background: var(--dark-blue-color);
   border-radius: 24px 24px 0 0;
 }
-.testimonials-section .testimonial-card:last-child::before{
+.testimonials-section .testimonial-card:last-child::before {
   left: 40px;
   top: -50px;
   border-radius: 0 0 24px 24px;
   height: calc(100% + 90px);
   z-index: -1;
-
 }
 .testimonials-section .testimonial-card .content {
   font-family: "Raleway", sans-serif;
@@ -296,4 +295,85 @@ section p {
 }
 .testimonials-section .features {
   margin-bottom: 30px;
+}
+
+/* Courses Section */
+
+.courses-section {
+  background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+  padding: 70px 0;
+  padding-bottom: 120px;
+}
+
+.courses-section h2 {
+  text-align: center;
+}
+
+.courses-section .course-cards {
+  display: flex;
+  gap: 70px;
+}
+
+.courses-section .course-cards img {
+  width: 100%;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+  border-radius: 24px;
+}
+
+.courses-section .course-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 0px 32px;
+  margin: 40px 0;
+  position: relative;
+}
+.courses-section .course-card::after{
+  content: "";
+  height: 8px;
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  bottom: 0;
+  background: var(--dark-blue-color);
+  border-radius: 24px;
+}
+
+.courses-section .course-cards h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 150%;
+  color: var(--dark-blue-color);
+}
+.courses-section .course-cards .info {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.courses-section .course-cards  .duration {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  white-space: nowrap;
+  color: var(--dark-blue-color);
+  position: relative;
+  padding-left: 20px;
+}
+
+.courses-section .course-card .duration::before{
+  content: url("images/clock-icon.svg");
+  position: absolute;
+  top: 2px;
+  left: -6px;
+}
+
+.courses-section .wrapper{
+  position: relative;
+}
+.courses-section .wrapper .btn{
+  position: absolute;
+  right: 0;
 }
