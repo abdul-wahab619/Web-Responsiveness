@@ -408,3 +408,79 @@ section p {
   font-size: 20px;
   color: #fff;
 }
+
+/* Footer */
+
+footer {
+  background: var(--dark-color);
+  color: #fff;
+  margin-top: 100px;
+  padding: 70px 0;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer h3 {
+  color: var(--orange-color);
+}
+footer ul {
+  list-style: none;
+  padding-left: 20px;
+}
+footer ul li {
+  margin: 16px 0;
+}
+
+footer .links-container {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .links-container .links ul li{
+  margin-left: -18px;
+}
+
+footer .social {
+  margin-left: 20px;
+}
+footer .social a {
+  margin-right: 28px;
+}
+
+footer form {
+  margin-left: 20px;
+  margin-top: 16px;
+  position: relative;
+}
+
+footer form input {
+  font-family: "poppins", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 200%;
+  border-radius: 8px;
+  padding: 8px 32px;
+  border: none;
+  width: 100%;
+  color: var(--dark-blue-color);
+}
+footer form .submit-btn {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--dark-blue-color);
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 32px;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  cursor: pointer;
+}
+footer .copyright{
+  margin-top: 36px;
+}
